@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>portfolio</title> 
+</head>
+<body>
+ 
+    
+    <div class="container">
+<div class="glass-container">
+    <nav class="navbar">
+    <div class="logo"><a href="#">Dana page</a></div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="#projects">Projects</a></li>
+        <li class="nav-link"><a href="#gallery">Gallery</a></li>
+        <li class="nav-link"><a href="#conact">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <div class="content">
+        <div class="main">
+            <h2>Hey! <br> I'm <span class="highligt">Dana Aljohani</span></h2>
+            <p> I'm a passionate Front-End Developer, building interactive
+                 and responsive web applications. This portfolio is a live 
+                 demonstration of my skills and growth journey in web development.
+            </p>
+            <a href="#gallery"><button>Explore My Work</button></a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<section id="skills">
+    <div class="skills">
+        <h2>About Me</h2>
+        <p>Hi, I'm Dana Aljohani, a passionate Front-End Developer. I specialize in building interactive and responsive web applications. Below are some of the skills I work with:</p>
+
+        <div class="skills-list">
+                <div class="skill">
+                <h3>Technical Skills</h3>
+            <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React (Basic)</li>
+                    <li>Figma</li>
+                    <li>GitHub</li>
+                    <li>Power automate</li>
+            </ul>
+            </div>
+
+            <div class="skill">
+            <h3>Soft Skills</h3>
+            <ul>
+                    <li>Team Collaboration</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                    <li>Communication</li>
+            </ul>  
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="projects">
+        <h2>My Projects</h2>
+        <p>A showcase of my recent projects that reflect my skills and passion in web development.</p>
+
+        <div class="project-list">
+            <div class="project">
+                <h3>Smart Contract Vulnerability Detector</h3>
+                <p>Developed a tool to detect Reentrancy and Bad Randomness vulnerabilities in blockchain smart contracts using Graph Neural Networks (GNN).</p>
+            </div>
+
+            <div class="project">
+                <h3>Login Page with JavaScript Validation</h3>
+                <p>Created a responsive login page with password strength checking and toggle visibility feature for improved usability.</p>
+                <a href="https://github.com/danaMusaad/loging-" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Responsive Navigation Bar</h3>
+                <p>Designed and implemented a fully responsive navbar with smooth animations compatible across devices.</p>
+                <a href="https://github.com/danaMusaad/Responsive-NavBar" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>To-Do List Application</h3>
+                <p>Built an interactive to-do list application with JavaScript, supporting adding, deleting, and editing tasks.</p>
+                <a href="https://github.com/danaMusaad/To-Do-list-with-html-css-js" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- قسم الصور -->
+<section id="gallery">
+    <div class="gallery-container">
+        <h2>Some of My Works</h2>
+        <p>Here are some examples of my projects<br>Press to more details <br></p>
+
+        <div class="images-grid">
+            <div class="image-item">
+                <img src="images/login page.png" alt="Login Page:A clean and modern login interface focused on user-friendly experience and easy interaction with input fields." onclick="openModal(this)">
+            </div>
+            <div class="image-item">
+                <img src="images/web.png" alt="Web Project:A complete website showcasing skills in layout design and element organization with a professional and cohesive style " onclick="openModal(this)">
+            </div>
+            <div class="image-item">
+                <img src="images/blackbord.png" alt="Blackboard Project By Figma: An improved Blackboard interface that addresses original design issues and enhances user accessibility and navigation." onclick="openModal(this)">
+            </div>
+            <div class="image-item">
+                <img src="images/login page edited.png" alt="Login Page Edited:An updated version of the login page featuring visual enhancements like colors, shadows, and interactive elements to boost user experience." onclick="openModal(this)">
+            </div>
+            <div class="image-item">
+                <img src="images/responsive navbar.png" alt="Responsive Navbar:A fully responsive navigation bar that adapts smoothly across devices, demonstrating mastery of responsive web design principles." onclick="openModal(this)">
+            </div>
+            <div class="image-item">
+                <img src="images/To-do list.png" alt="To-Do List:An interactive to-do list app that allows adding, editing, and deleting tasks with a simple, clean, and organized design." onclick="openModal(this)">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- نافذة الـ Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+
+<section id="conact">
+    <div class="contact">
+        <h2>Contact Me</h2>
+    <p>Phone: +966 533723257</p>
+    <p>Email: D3na076@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dana-aljohani/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/danaMusaad" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
+    </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2025. All rights reserved.</p>
+  <p>Designed by Dana Aljohani</p>
+</footer>
+
+
+<script src="java.js"></script>
+</body>
+</html>
