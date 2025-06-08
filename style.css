@@ -9,14 +9,9 @@
 }
 
 body {
-background-image: 
-  radial-gradient(circle, #000080, #000040),
-  radial-gradient(circle, #483D8B, #2F3A6E),
-  radial-gradient(circle, #6A5ACD, #4B3F8C),
-  radial-gradient(circle, #4169E1, #27408B),
-  radial-gradient(circle, #708090, #4B5D66);
+    background-color: rgb(246, 232, 234); /* كريم فاتح */
     min-height: 100vh;
-    color: #FFffff;
+    color: rgb(34, 24, 28); /* بني غامق */
 }
 
 .container {
@@ -26,12 +21,12 @@ background-image:
 
 .glass-container {
     max-width: 80vw;
-     height: 80vh;
+    height: 80vh;
     margin-top: 10vh;
     padding: 30px;
     border-radius: 19px;
-    background-color: rgba(245, 245, 220, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(246, 232, 234, 0.5);
+    box-shadow: 0 4px 30px rgba(34, 24, 28, 0.1);
 }
 
 /* === Navbar Styling === */
@@ -49,17 +44,17 @@ background-image:
 .logo a {
     font-size: 25px;
     font-weight: bold;
-    color: #fff;
+    color: rgb(34, 24, 28);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .logo a:hover {
-    color: #000080;
+    color: rgb(89, 58, 46); /* بني أغمق */
 }
 
 .highligt{
-    color: #000040;
+    color: rgb(89, 58, 46); /* بني متوسط */
 }
 
 /* === Navigation Links Styling === */
@@ -71,7 +66,7 @@ ul.nav-links {
 
 ul.nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(34, 24, 28);
     font-size: 16px;
     transition: color 0.3s ease;
     position: relative;
@@ -81,7 +76,7 @@ ul.nav-links a::after {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: #000080;
+    background-color: rgb(89, 58, 46); /* بني متوسط */
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -93,7 +88,7 @@ ul.nav-links a:hover::after {
 }
 
 ul.nav-links a:hover {
-    color: #fff;
+    color: rgb(89, 58, 46); /* بني متوسط */
 }
 
 /* === Main Content Styling === */
@@ -111,19 +106,21 @@ ul.nav-links a:hover {
 .main h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: rgb(34, 24, 28);
 }
 
 .main p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     line-height: 1.5;
+    color: rgb(34, 24, 28);
 }
 
 button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #000040;
+    color: rgb(246, 232, 234);
+    background-color: rgb(89, 58, 46); /* بني متوسط */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -131,24 +128,23 @@ button {
 }
 
 button:hover {
-    background-color: #27408B;
-    color: #fff;
+    background-color: rgb(120, 85, 65); /* بني أغمق */
+    color: rgb(246, 232, 234);
 }
-
 
 /* تصميم القسم */
 .about {
-    color: #000080;
+    color: rgb(34, 24, 28);
     padding: 50px;
     margin-top: 30px;
     border-radius: 16px;
 }
 
-
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     text-align: center;
+    color: rgb(34, 24, 28);
 }
 
 .about p {
@@ -156,20 +152,20 @@ button:hover {
     line-height: 1.8;
     margin-bottom: 30px;
     text-align: center;
+    color: rgb(34, 24, 28);
 }
 
-
-#skills{
+#skills {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-.skills{
+.skills {
     max-width: 80vw;
     padding: 40px;
-    background-color: rgba(245, 245, 220, 0.5);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(246, 232, 234, 0.5);
+    box-shadow: 0 2px 15px rgba(34, 24, 28, 0.2);
     border-radius: 12px;
 }
 
@@ -183,7 +179,7 @@ button:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #000080;
+    color: rgb(34, 24, 28);
 }
 
 .skills p {
@@ -191,28 +187,29 @@ button:hover {
     line-height: 1.8;
     margin-bottom: 30px;
     text-align: center;
+    color: rgb(34, 24, 28);
 }
 
 .skill {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(89, 58, 46, 0.1); /* بني شفاف */
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(89, 58, 46, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
- .skill:hover {
+.skill:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 15px rgba(120, 85, 65, 0.25);
 }
 
 .skill h3 {
     font-size: 1.6rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #000080;
-} 
+    color: rgb(34, 24, 28);
+}
 
 .skill ul {
     list-style-type: none;
@@ -223,8 +220,8 @@ button:hover {
     font-size: 1rem;
     margin-bottom: 10px;
     font-weight: bold;
+    color: rgb(34, 24, 28);
 }
-
 
 /* ===== Projects Section ===== */
 #projects {
@@ -236,8 +233,8 @@ button:hover {
 .projects {
     max-width: 80vw;
     padding: 40px;
-    background-color: rgba(245, 245, 220, 0.5);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(246, 232, 234, 0.5);
+    box-shadow: 0 2px 15px rgba(34, 24, 28, 0.2);
     border-radius: 12px;
 }
 
@@ -245,7 +242,7 @@ button:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #000080;
+    color: rgb(34, 24, 28);
 }
 
 .projects p {
@@ -253,6 +250,7 @@ button:hover {
     line-height: 1.8;
     margin-bottom: 30px;
     text-align: center;
+    color: rgb(34, 24, 28);
 }
 
 .project-list {
@@ -262,28 +260,29 @@ button:hover {
 }
 
 .project {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(89, 58, 46, 0.1);
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(89, 58, 46, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 15px rgba(120, 85, 65, 0.25);
 }
 
 .project h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #000080;
+    color: rgb(34, 24, 28);
 }
 
 .project p {
     font-size: 1rem;
     line-height: 1.5;
+    color: rgb(34, 24, 28);
 }
 
 .project-link {
@@ -291,8 +290,8 @@ button:hover {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 15px;
-    color: #fff;
-    background-color: #000040;
+    color: rgb(246, 232, 234);
+    background-color: rgb(89, 58, 46);
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
@@ -300,9 +299,8 @@ button:hover {
 }
 
 .project-link:hover {
-    background-color: #27408B;
+    background-color: rgb(120, 85, 65);
 }
-
 
 /* ===== Gallery Section ===== */
 #gallery {
@@ -314,8 +312,8 @@ button:hover {
 .gallery-container {
     max-width: 80vw;
     padding: 40px;
-    background-color: rgba(245, 245, 220, 0.5);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(246, 232, 234, 0.5);
+    box-shadow: 0 2px 15px rgba(34, 24, 28, 0.2);
     border-radius: 12px;
     text-align: center;
 }
@@ -323,13 +321,13 @@ button:hover {
 .gallery-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #000080;
+    color: rgb(34, 24, 28);
 }
 
-.gallery-container p{
+.gallery-container p {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: rgb(34, 24, 28);
 }
 
 .images-grid {
@@ -341,7 +339,7 @@ button:hover {
 .image-item {
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(34, 24, 28, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -355,7 +353,7 @@ button:hover {
 
 .image-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(120, 85, 65, 0.3);
 }
 
 /* ===== Modal Styling ===== */
@@ -367,7 +365,7 @@ button:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(34, 24, 28, 0.8);
     animation: fadeIn 0.3s ease-out;
 }
 
@@ -375,82 +373,37 @@ button:hover {
     margin: auto;
     display: block;
     width: 60%;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    animation: zoomIn 0.3s ease-out;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close:hover {
-    color: #000040;
+    max-width: 700px;
+    border-radius: 15px;
+    margin-top: 8vh;
+    box-shadow: 0 0 25px rgba(34, 24, 28, 0.6);
 }
 
 #caption {
     margin: 15px auto;
+    display: block;
+    width: 60%;
+    max-width: 700px;
     text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
+    color: rgb(246, 232, 234);
+    font-size: 20px;
 }
 
-
-.contact{   
-    max-width: 80vw;
-    padding: 40px;
-    margin: 40px auto;
-    background-color: rgba(245, 245, 220, 0.5);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-}
-
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #000080;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    text-align: center;   
-}
-
-.contact a{
-    text-decoration: none;
+.close {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    color: rgb(246, 232, 234);
+    font-size: 40px;
     font-weight: bold;
-    color: #000040;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.contact a:hover{
-    color: #27408B;
+.close:hover {
+    color: rgb(120, 85, 65);
 }
 
-.site-footer {
-  background-color: #393939;     
-  color: #ccc;                
-  text-align: center;          
-  padding: 15px 0;             
-  font-size: 0.9rem;           
-  font-family: Arial, sans-serif;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); 
-  margin-top: 40px;            
-}
-
-
-/* ===== Animations ===== */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -460,170 +413,92 @@ button:hover {
     }
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
+/* ===== Contact Section ===== */
+.contact {
+    background-color: rgba(246, 232, 234, 0.5);
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(34, 24, 28);
+    box-shadow: 0 2px 15px rgba(34, 24, 28, 0.2);
 }
 
-
-
-/* تنسيق للشاشات الصغيرة */
-@media screen and (max-width: 768px) {
-    .glass-container {
-        max-width: 95vw;
-        height: auto;
-    }
-
-    ul.nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    ul.nav-links a {
-        font-size: 18px;
-    }
-
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main h2 {
-        font-size: 2rem;
-    }
-
-    .main p {
-        font-size: 1rem;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    #skills, #projects, #gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills, .projects, .gallery-container {
-        max-width: 95vw;
-    }
-
-    .skills-list, .project-list, .images-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skill, .project, .image-item {
-        width: 100%;
-    }
-
-    .contact {
-        max-width: 95vw;
-    }
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(34, 24, 28);
 }
 
-/* === Hamburger Icon Styling === */
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgb(34, 24, 28);
+}
+
+.contact a {
+    color: rgb(34, 24, 28);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: rgb(120, 85, 65);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: rgb(34, 24, 28);
+    color: rgb(246, 232, 234);
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 45px;
+}
+
+.site-footer p {
+    font-size: 1rem;
+}
+
+/* ===== Hamburger Menu for Mobile ===== */
 .hamburger {
     display: none;
     flex-direction: column;
-    gap: 5px;
     cursor: pointer;
-    z-index: 10;
+    gap: 6px;
 }
 
 .hamburger span {
-    display: block;
-    width: 25px;
+    background-color: rgb(34, 24, 28);
+    width: 28px;
     height: 3px;
-    background-color: #fff;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
 
-/* عند فتح القائمة */
-.hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+.close:hover {
+    color: rgb(24, 16, 20);
 }
 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* إخفاء الـ Nav Links في الشاشات الصغيرة */
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    ul.nav-links {
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: rgba(146, 146, 163, 0.8);
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    ul.nav-links {
         display: none;
-    }
-
-    ul.nav-links a {
-        color: #fff;
-        font-size: 18px;
-        text-decoration: none;
-    }
-
-    ul.nav-links.show {
-        display: flex;
-    }
-}
-
-
-/* تنسيق للشاشات الأصغر (الجوالات) */
-@media screen and (max-width: 480px) {
-    .navbar {
         flex-direction: column;
         gap: 10px;
+        margin-top: 15px;
     }
-
-    .logo a {
-        font-size: 22px;
-    }
-
-    ul.nav-links {
-        gap: 5px;
-    }
-
-    .glass-container {
-        padding: 15px;
-    }
-
-    .main h2 {
-        font-size: 1.8rem;
-    }
-
-    .main p {
-        font-size: 0.9rem;
-    }
-
-    .skills, .projects, .gallery-container {
-        padding: 20px;
-    }
-
-    button {
-        font-size: 0.9rem;
-    }
-
-    .skills-list, .project-list, .images-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+    
+    .hamburger {
+        display: flex;
     }
 }
