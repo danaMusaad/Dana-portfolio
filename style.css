@@ -38,6 +38,8 @@ body {
     border-radius: 12px;
     position: sticky;
     top: 0;
+    background-color: rgba(246, 232, 234, 0.85);
+    z-index: 100;
 }
 
 /* === Logo Styling === */
@@ -59,9 +61,23 @@ body {
 
 /* === Navigation Links Styling === */
 ul.nav-links {
-    display: flex;
+    display: none; /* مخفية افتراضياً */
+    flex-direction: column;
+    position: absolute;
+    top: 65px; /* تحت الشريط */
+    right: 20px;
+    background: rgb(246, 232, 234);
+    width: 180px;
+    border-radius: 10px;
     list-style: none;
-    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 15px 10px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+ul.nav-links.show {
+    display: flex;
 }
 
 ul.nav-links a {
@@ -70,6 +86,7 @@ ul.nav-links a {
     font-size: 16px;
     transition: color 0.3s ease;
     position: relative;
+    padding: 10px 0;
 }
 
 ul.nav-links a::after {
@@ -78,7 +95,7 @@ ul.nav-links a::after {
     height: 2px;
     background-color: rgb(89, 58, 46); /* بني متوسط */
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     left: 0;
     transition: width 0.3s ease;
 }
@@ -91,16 +108,48 @@ ul.nav-links a:hover {
     color: rgb(89, 58, 46); /* بني متوسط */
 }
 
+/* === Hamburger Menu for Mobile === */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    background-color: rgb(34, 24, 28);
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* هذي للحالة لما الهامبرغر مغلق (عادي) */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* === Main Content Styling === */
 .content {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .main {
-    flex: 1;
+    flex: 1 1 400px;
+    min-width: 300px;
 }
 
 .main h2 {
@@ -110,7 +159,7 @@ ul.nav-links a:hover {
 }
 
 .main p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     line-height: 1.5;
     color: rgb(34, 24, 28);
@@ -159,6 +208,7 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .skills {
@@ -228,6 +278,7 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .projects {
@@ -460,129 +511,42 @@ button:hover {
     font-size: 1rem;
 }
 
-/* ===== Hamburger Menu for Mobile ===== */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 6px;
-}
-
-.hamburger span {
-    background-color: rgb(34, 24, 28);
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.close:hover {
-    color: rgb(24, 16, 20);
-}
-
-
-/* ----- 12. الاستجابة لشاشات أصغر ----- */
-
-/* تابلت */
-@media (max-width: 992px) {
-    .project-list {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .images-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .skills-list {
-        gap: 40px;
-    }
-}
-
-/* موبايل */
-@media (max-width: 768px) {
-    /* شريط التنقل */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: rgba(255, 255, 255, 0.95);
-        flex-direction: column;
-        width: 220px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        padding: 20px;
-        z-index: 999;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-link {
-        margin-bottom: 15px;
+/* ===== Responsive Design ===== */
+@media screen and (min-width: 768px) {
+    ul.nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 30px;
+        background: none;
+        width: auto;
+        box-shadow: none;
+        padding: 0;
     }
 
     .hamburger {
-        display: flex;
+        display: none;
     }
 
-    /* محتوى الصفحة */
     .content {
-        padding: 40px 15px;
+        flex-wrap: nowrap;
     }
 
-    .main h2 {
-        font-size: 1.8rem;
-    }
-
-    .main p {
-        font-size: 1rem;
-    }
-
-    /* الأقسام */
-    section {
-        padding: 40px 15px;
-    }
-
-    /* المشاريع */
-    .project-list {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    /* معرض الصور */
-    .images-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    /* المهارات */
-    .skills-list {
-        flex-direction: column;
-        align-items: center;
+    .glass-container {
+        max-width: 1200px;
+        height: auto;
     }
 }
 
-/* موبايل صغير جدًا */
-@media (max-width: 480px) {
-    .main h2 {
-        font-size: 1.5rem;
+@media screen and (max-width: 767px) {
+    .glass-container {
+        height: auto;
+        padding: 20px;
+        margin-top: 5vh;
     }
 
-    .main p {
-        font-size: 0.9rem;
-    }
-
-    .project {
-        padding: 15px;
-    }
-
-    .skills-list {
+    .content {
+        flex-direction: column;
         gap: 20px;
-    }
-
-    .nav-links {
-        width: 180px;
     }
 }
