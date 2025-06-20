@@ -37,7 +37,7 @@ body {
     padding: 15px 30px;
     border-radius: 12px;
     position: sticky;
-    top: 0;
+    top: 10px;
     background-color: rgba(246, 232, 234, 0.85);
     z-index: 100;
 }
@@ -318,6 +318,20 @@ button:hover {
     box-shadow: 0 2px 10px rgba(89, 58, 46, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.project-buttons .project-link {
+  flex: 1 1 120px;
+  text-align: center;
+}
+
 
 .project:hover {
     transform: translateY(-5px);
