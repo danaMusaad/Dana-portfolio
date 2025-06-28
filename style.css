@@ -9,10 +9,9 @@
 }
 
 body {
-    background-color: rgb(246, 232, 234); /* كريم فاتح */
+    background-color: rgb(244, 237, 238); 
     min-height: 100vh;
-    color: rgb(34, 24, 28); /* بني غامق */
-}
+    color: rgb(34, 24, 28); 
 
 .container {
     display: flex;
