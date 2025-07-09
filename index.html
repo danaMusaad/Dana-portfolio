@@ -1,234 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <title>Dana Aljohani | Front-End Developer</title> 
-</head>
-<body>
- 
-    
-    <div class="container">
-<div class="glass-container">
+    <title>Dana Aljohani</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-    <div class="logo"><a href="#">Dana page</a></div>
+      <div class="container">
+        <div class="logo">Dana Aljohani</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <!-- Hamburger Icon -->
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <ul class="nav-links">
-        <li class="nav-link"><a href="#">Home</a></li>
-        <li class="nav-link"><a href="#skills">About</a></li>
-        <li class="nav-link"><a href="#projects">Projects</a></li>
-        <li class="nav-link"><a href="#gallery">Gallery</a></li>
-        <li class="nav-link"><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-    <div class="content">
-        <div class="main">
-            <h2>Hey! <br> I'm <span class="highligt">Dana Aljohani</span></h2>
-            <p> I'm a passionate Front-End Developer, building interactive
-                 and responsive web applications. This portfolio is a live 
-                 demonstration of my skills and growth journey in web development.
-            </p>
-            <a href="#gallery"><button>Explore My Work</button></a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
-</div>
-</div>
+      </div>
+    </nav>
 
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>
+          Welcome!<br />
+          I'm Dana Aljohani
+        </h1>
+        <p>
+          As a passionate Front-End Developer, I bring ideas to life by crafting
+          clean, modern, and responsive web interfaces. This portfolio is a
+          window into my journey of growth, creativity, and dedication to
+          delivering seamless user experiences. Let’s explore my work and see
+          how I turn designs into reality.
+        </p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+      </div>
+    </section>
 
-<section id="skills">
-    <div class="skills">
-        <h2>About Me</h2>
-        <p>Hi, I'm Dana Aljohani, a passionate Front-End Developer. I specialize in building interactive and responsive web applications. Below are some of the skills I work with:</p>
+    <section id="about">
+      <div class="about-container reveal">
+        <h2 class="reveal">About Me</h2>
+        <p class="reveal">
+          Hi, I'm Dana Aljohani, a passionate Front-End Developer I specialize
+          in building interactive and responsive web applications.
+          <br />
+          Below are some of the skills I work with:
+        </p>
 
-        <div class="skills-list">
-                <div class="skill">
-                <h3>Technical Skills</h3>
+        <div class="skills-grid reveal">
+          <div class="skill-box">
+            <h3>Technical Skills</h3>
             <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Figma</li>
-                    <li>GitHub</li>
-                    <li>UI/UX Design</li>
-                    <li>Responsive Web Design</li>
-                    <li>Power automate</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Figma</li>
+              <li>GitHub</li>
+              <li>UI/UX Design</li>
+              <li>Responsive Web Design</li>
+              <li>Power Automate</li>
             </ul>
-            </div>
+          </div>
 
-            <div class="skill">
+          <div class="skill-box">
             <h3>Soft Skills</h3>
             <ul>
-                    <li>Team Collaboration</li>
-                    <li>Problem Solving</li>
-                    <li>Time Management</li>
-                    <li>Adaptability</li>
-                    <li>Communication</li>
-            </ul>  
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-  <div class="projects">
-    <h2>My Projects</h2>
-    <p>A showcase of my recent projects that reflect my skills and passion in web development.</p>
-
-    <div class="project-list">
-
-      <div class="project">
-        <h3>Smart Contract Vulnerability Detector</h3>
-        <p>Developed a tool to detect Reentrancy and Bad Randomness vulnerabilities in blockchain smart contracts using Graph Neural Networks (GNN).</p>
-      </div>
-
-        <div class="project">
-        <h3>Journey of Glory – Built with React</h3>
-        <p>Journey of Glory is a React project about Saudi kings, their achievements, and brief bios. The name “Masirat Al-Ezz” reflects their leadership journey.</p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/Journey-of-Glory" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/Journey-of-Glory/#kings" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+              <li>Team Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+              <li>Communication</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Login Page with JavaScript Validation</h3>
-        <p>Created a responsive login page with password strength checking and toggle visibility feature for improved usability.</p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/LoginValidation" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/LoginValidation/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>Taskify – Simple React To-Do App</h3>
+    <section id="projects">
+      <div class="projects">
+        <h2>My Projects</h2>
         <p>
-          A clean and responsive To-Do List app built with React.
-          Users can add, delete, and reorder tasks with ease.
-          The project showcases fundamental React concepts such as component state,
-          props, and event handling — making it a great learning tool and portfolio piece.
-          Tech Stack: React – JavaScript – CSS.
+          A showcase of my recent projects that reflect my skills and passion in
+          web development.
         </p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/TO-DoList-React" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/TO-DoList-React/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            
+            <h3>Smart Contract Vulnerability Detector</h3>
+            <p>
+              Developed a tool to detect Reentrancy and Bad Randomness
+              vulnerabilities in blockchain smart contracts using Graph Neural
+              Networks (GNN).
+            </p>
+
+          </div>
+
+          <div class="project-card">
+            <img
+              src="JourneyOfGlory.png"
+              alt="Journey of Glory – Built with React"
+            />
+            <h3>Journey of Glory – Built with React</h3>
+            <p>
+              Journey of Glory is a React project about Saudi kings, their
+              achievements, and brief bios. The name “Masirat Al-Ezz” reflects
+              their leadership journey.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/Journey-of-Glory"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/Journey-of-Glory/#kings"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="login page.png"
+              alt="Login Page with JavaScript Validation"
+            />
+            <h3>Login Page with JavaScript Validation</h3>
+            <p>
+              Created a responsive login page with password strength checking
+              and toggle visibility feature for improved usability.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/LoginValidation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/LoginValidation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="To-do React.png"
+              alt="Taskify – Simple React To-Do App"
+            />
+            <h3>Taskify – Simple React To-Do App</h3>
+            <p>
+              A clean and responsive To-Do List app built with React. Users can
+              add, delete, and reorder tasks with ease.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/TO-DoList-React"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/TO-DoList-React/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="responsive navbar.png"
+              alt="Responsive Navigation Bar"
+            />
+            <h3>Responsive Navigation Bar</h3>
+            <p>
+              Designed and implemented a fully responsive navbar with smooth
+              animations compatible across devices.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/Responsive-NavBar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/Responsive-NavBar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="Notes App.png" alt="QuickNote – Web Notes App" />
+            <h3>QuickNote – Web Notes App</h3>
+            <p>
+              A lightweight and responsive notes app built with HTML, CSS, and
+              vanilla JavaScript. Allows creating, editing, and deleting notes
+              with real-time saving.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/Notes-WebApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/Notes-WebApp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="To-do list.png" alt="To-Do List Application" />
+            <h3>To-Do List Application</h3>
+            <p>
+              Built an interactive to-do list application with JavaScript,
+              supporting adding, deleting, and editing tasks.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/danaMusaad/To-Do-list-with-html-css-js"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View on GitHub</a
+              >
+              <a
+                href="https://danamusaad.github.io/daily-tasks-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Responsive Navigation Bar</h3>
-        <p>Designed and implemented a fully responsive navbar with smooth animations compatible across devices.</p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/Responsive-NavBar" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/Responsive-NavBar/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>QuickNote – Web Notes App</h3>
-        <p>
-          A lightweight and responsive notes app built with HTML, CSS, and vanilla JavaScript.
-          It allows users to create, edit, and delete notes with real-time saving using localStorage.
-          The layout is fully responsive — notes are aligned in a row on desktop and stacked vertically
-          on mobile.
-          Tech Stack: HTML – CSS – JavaScript.
-        </p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/Notes-WebApp" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/Notes-WebApp/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>To-Do List Application</h3>
-        <p>Built an interactive to-do list application with JavaScript, supporting adding, deleting, and editing tasks.</p>
-        <div class="project-buttons">
-          <a href="https://github.com/danaMusaad/To-Do-list-with-html-css-js" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-          <a href="https://danamusaad.github.io/daily-tasks-app/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- قسم الصور -->
-<section id="gallery">
-    <div class="gallery-container">
-        <h2>Some of My Works</h2>
-        <p>Here are some examples of my projects<br><b> Press to more details </b><br></p>
-
-        <div class="images-grid">
-            <div class="image-item">
-                <img src="login page.png" alt="Login Page:A clean and modern login interface focused on user-friendly experience and easy interaction with input fields." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="To-do React.png" alt="A clean and minimal To-Do List app built with React. Add, delete, and reorder your tasks with ease while practicing key React concepts like state, props, and event handling." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="JourneyOfGlory.png" alt="Journey of Glory is a React-based web project that highlights the legacy of the Kings of Saudi Arabia.
-The site features a collection of royal portraits, brief biographies, and key achievements for each king, all presented in a clean and accessible layout.
-It aims to honor Saudi leadership and showcase the nation’s historical milestones through a personal and proudly crafted digital experience." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="web.png" alt="Web Project:A complete website showcasing skills in layout design and element organization with a professional and cohesive style " onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="Notes App.png" alt="A lightweight and responsive notes app made with HTML, CSS, and vanilla JavaScript. Create, edit, and delete notes with real-time saving using localStorage — works great on any device." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="blackbord.png" alt="Blackboard Project By Figma: An improved Blackboard interface that addresses original design issues and enhances user accessibility and navigation." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="login page edited.png" alt="Login Page Edited:An updated version of the login page featuring visual enhancements like colors, shadows, and interactive elements to boost user experience." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="responsive navbar.png" alt="Responsive Navbar:A fully responsive navigation bar that adapts smoothly across devices, demonstrating mastery of responsive web design principles." onclick="openModal(this)">
-            </div>
-            <div class="image-item">
-                <img src="To-do list.png" alt="To-Do List:An interactive to-do list app that allows adding, editing, and deleting tasks with a simple, clean, and organized design." onclick="openModal(this)">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- نافذة الـ Modal -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div id="caption"></div>
-</div>
-
-
-<section id="contact">
-    <div class="contact">
+    <section id="contact">
+      <div class="contact">
         <h2>Contact Me</h2>
-    <p>Phone: +966 533723257</p>
-    <p>Email: D3na076@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/dana-aljohani/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/danaMusaad" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
-    </div>
-</section>
+        <p>Phone: <a href="tel:+966533723257">+966 5337 23257</a></p>
+        <p>Email: <a href="mailto:D3na076@gmail.com">D3na076@gmail.com</a></p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/dana-aljohani/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit my LinkedIn</a
+          >
+        </p>
+        <p>
+          GitHub:
+          <a
+            href="https://github.com/danaMusaad"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit my GitHub</a
+          >
+        </p>
+      </div>
+    </section>
 
-<footer class="site-footer">
-  <p>&copy; 2025. All rights reserved.</p>
-  <p>Designed by Dana Aljohani</p>
-</footer>
+    <footer class="site-footer">
+      <p>&copy; 2025. All rights reserved.</p>
+      <p>Designed by Dana Aljohani</p>
+    </footer>
 
-
-<script src="java.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
