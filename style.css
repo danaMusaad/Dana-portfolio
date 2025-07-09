@@ -276,7 +276,7 @@ body {
 }
 
 #contact {
-  background-color: rgba(234, 239, 239, 0.8); /* نفس لون #EAEFEF مع شفافية */
+  background-color: white;
   color: #210F37;
   padding: 50px 20px;
   text-align: center;
