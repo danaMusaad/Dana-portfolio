@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #FFFCFB;
-  color: #210F37;
   line-height: 1.6;
 }
 
@@ -72,48 +72,73 @@ body {
 }
 
 .hero {
-  background-color: #FFFCFB; 
-  height: calc(100vh - 60px); 
+  background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+}
+
+.hero-box {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem;
   text-align: center;
-  padding: 0 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  width: 100%;
+  color: #2b1b4d;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+  animation-delay: 0.3s;
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  color: #210F37; 
-  margin-bottom: 1rem;
+@keyframes fadeInUp {
+    to{
+opacity: 1;
+transform: translateY(0);
+    }
+}
+.hero-box h1 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
   font-weight: 700;
+  line-height: 1.4;
 }
 
-.hero-content p {
-  font-size: 1.25rem;
-  color: #210F37;
+.hero-box h1 span {
+  display: block;
+  color: #5a4b7d; 
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.hero-box p {
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #3b3b3b;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #210F37; 
-  color: #ffffff;
-  padding: 0.75rem 1.75rem;
-  font-size: 1.1rem;
+  background-color: #2b1b4d;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover {
-  background-color: #3b2e6a; 
+  background-color: #443270;
+  transform: translateY(-3px);
 }
-
 
 #about {
   padding: 80px 20px;
